@@ -2,14 +2,14 @@ package mparish;
 
 import java.util.Locale;
 
-public class NameProcessor {
+public class Person {
     private String firstName;
     private String lastName;
 
-    public NameProcessor() {
+    public Person() {
     }
 
-    public NameProcessor(String firstName, String lastName) {
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -30,7 +30,7 @@ public class NameProcessor {
         this.lastName = lastName;
     }
 
-    public String nameConcatenator() {
+    public String fullName() {
         firstName = firstName.substring(0, 1).toUpperCase(Locale.getDefault()) + firstName.substring(1);
         lastName = lastName.substring(0, 1).toUpperCase(Locale.getDefault()) + lastName.substring(1);
         return lastName + ", " + firstName;

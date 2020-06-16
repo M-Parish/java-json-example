@@ -11,6 +11,6 @@ public class JsonProcessorTest {
 
     @Test public void testThatJsonRetirevesData() throws IOException {
         processor = new JsonProcessor();
-        assertEquals("Parish, Matt", processor.testMe().nameConcatenator());
+        assertEquals("Parish, Matt", processor.testMe().fullName());
     }
 }

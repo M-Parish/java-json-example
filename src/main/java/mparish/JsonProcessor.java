@@ -7,10 +7,10 @@ import java.io.IOException;
 public class JsonProcessor {
     ObjectMapper mapper = new ObjectMapper();
 
-    public NameProcessor testMe() throws IOException {
+    public Person testMe() throws IOException {
         return mapper.readValue(
                 JsonProcessor.class.getResourceAsStream("/name.json"),
-                NameProcessor.class
+                Person.class
         );
     }
 }
